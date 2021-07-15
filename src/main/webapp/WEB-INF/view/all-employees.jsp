@@ -25,7 +25,6 @@
             <td>${emp.department}</td>
             <td>${emp.salary}</td>
         </tr>
-
     </c:forEach>
 </table>
 </body>
