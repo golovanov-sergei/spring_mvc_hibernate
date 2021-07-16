@@ -43,10 +43,10 @@ public class MyController {
         return  "employee-info";
     }
     @RequestMapping("/delete-employee")
-    public String deleteEmployee(@RequestParam("empId") int id, Model model){
+    public String deleteEmployee(@RequestParam("empId") int id){
         employeeService.deleteEmployee(id);
-        Employee employee = employeeService.getEmployee(id);
-        model.addAttribute("employee", employee);
+//        Employee employee = employeeService.getEmployee(id);
+//        model.addAttribute("employee", employee);
         return  "redirect:/";
     }
 }
